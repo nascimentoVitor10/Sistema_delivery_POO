@@ -1,4 +1,4 @@
-#Disciplina de POO
+# Disciplina de POO
 
 Este trabalho constitui em um sistema de delivery implementado por uma cantina
 por meio do qual os próprios alunos podem realizar a entrega de pedidos disponíveis.
