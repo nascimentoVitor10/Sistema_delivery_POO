@@ -31,9 +31,18 @@ Conteúdos:
 * tratamento de erros e exceções
 
   Em um programa é possível que erros imprevistos ocorram. Nesse caso, o erro é
-  uma *exceção* ao comportamento normal do programa.
+  uma *exceção* ao comportamento normal do programa. Em java as exceções são tra-
+  tadas como objetos. Há dois tipos em java: *checked* e *unchecked exceptions*.
 
-  ```try {
+      - checked exceptions : o tratamento é obrigatório
+      - unchecked exceptions : não há obrigatoriedade para tratamento (não será notificada pelo compilador)
+
+  Toda exceção é derivada do objeto Throwable.
+
+  ![familia do Throwable](https://www.alura.com.br/apostila-java-orientacao-objetos/assets/images/excecoes/arvore_heranca_throwable.png)
+
+  ```
+  try {
       // código normal a ser executado
   }
   catch (exceção 1){
