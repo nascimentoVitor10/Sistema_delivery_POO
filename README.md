@@ -33,7 +33,7 @@ Conteúdos:
   Em um programa é possível que erros imprevistos ocorram. Nesse caso, o erro é
   uma *exceção* ao comportamento normal do programa.
 
-  `try {
+  ```try {
       // código normal a ser executado
   }
   catch (exceção 1){
@@ -42,7 +42,7 @@ Conteúdos:
   catch (exceção 2){
       // código de tratamento do segundo tipo de erro
   }
-  `
+  ```
 
   
 
