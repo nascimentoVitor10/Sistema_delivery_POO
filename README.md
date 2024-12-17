@@ -27,7 +27,8 @@ Conteúdos:
   
 * arrays, ArrayLists e métodos estáticos
   \\
-  
+
+==============================================================================================
 * # Tratamento de erros e exceções
 
   Em um programa é possível que erros imprevistos ocorram. Nesse caso, o erro é
@@ -90,7 +91,7 @@ Conteúdos:
     }
  }
  ```
- *throws* apenas avisa a possibilidade de um método lançar uma exceção
+ *throws* apenas avisa a possibilidade de um método lançar uma exceção\n
  *throw* lança uma exceção
 
  Com esse tratamento o método sacar() já não precisa mais retornar true ou false
@@ -116,6 +117,16 @@ Conteúdos:
     System.out.println(e.getMessage());
  }
  ```
+
+ *criar sua própria exceção*
+ ```
+ public class SaldoInsuficienteException extends Exception {
+    SaldoInsuficienteException(String mensagem){
+        super(mensagem);
+    }
+ }
+ ```
+==============================================================================================
 
   
 * persistência em arquivos
