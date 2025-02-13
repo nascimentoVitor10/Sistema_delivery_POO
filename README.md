@@ -28,7 +28,7 @@ Conteúdos:
 * arrays, ArrayLists e métodos estáticos
   \\
 
-=============================================================================
+===================================================
 * # Tratamento de erros e exceções
 
   Em um programa é possível que erros imprevistos ocorram. Nesse caso, o erro é
@@ -126,10 +126,96 @@ Conteúdos:
     }
  }
  ```
-=============================================================================
+===================================================
+* # Persistência em arquivos
 
+  Quando não há um banco de dados à disposição para armazenar informações quando o
+  programa é armazenado, usa-se arquivos .txt
+
+  ```
+  FileWriter f = new FileWriter("aruivo.txt"); --> salvar informações ema arquivo
+  ```
   
-* persistência em arquivos
+  no caso de salvar informações em um arquivo existente, basta passar um segundo
+  parâmetro para não sobrescrever o arquivo.
+
+  ```
+  FileWriter f = new FileWriter("arquivo.txt", true);
+  ```
+
+  Usa-se a classe BufferedWriter junto a um objeto da classe FileWriter como parâmetro, a qual
+  irá criar um buffer na memória com o intuito de armazenar
+
+  ```
+  BufferedWriter buff = new BufferedWriter(f);
+
+  buff.write("cala boca idiota");
+  buff.write("\n");
+  buff("Olá!");
+  buff.close()
+  ```
+
+  ## Leitura de dados em arquivo
+
+  ```
+  FileReader f = new FileReader("arquivo.txt");
+  BufferedReader buff = new BufferedReader(f);
+
+  String nome = buff.readline();
+  int tam = Integer.parseInt(buff.readline());
+  buff.close();
+  ```
+===================================================
+* # Classes Abstratas e Interfaces
+
+## Classes Abstratas
+
+  é uma classe especial que não pode ser instanciada, apenas estendida. Ela
+  serve para ser superclasse em uma hierarquia. Basta utilizar o modificador
+  *abstract* para definir. A classe pode ou não conter métodos abstratos.
+  Métodos abstratos apenas indicam para as classes filhas que elas precisam
+  reescrevê-los.
+
+## Interfaces
+
+  uma interface define um conjunto de métodos que um grupo de classes deverá, *obrigatoriamente*,
+  implementar. Basicamente, define um "contrato" a ser seguido pelas classes que o assinarem. 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * classes abstratas e interfaces
 * coleções e ordenação
 * OO em python
